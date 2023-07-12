@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class TestBucket:
-    def test_of_different_language(self, browser):
+    def test_find_card_button(self, browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
         browser.get(link)
         assert WebDriverWait(browser, 30).until(EC.element_to_be_clickable(
